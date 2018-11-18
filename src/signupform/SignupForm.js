@@ -4,7 +4,8 @@ class SignupForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: ''
+      name: 'Adarsh',
+      username: ''
     };
   }
   handleChange = (name) => {
@@ -14,14 +15,17 @@ class SignupForm extends Component {
   }
   handleSubmit = () => {
     const {name} = this.state;
-    console.log('name', name);
+    this.setState({
+      username: name
+    });
   }
   render() {
-    const {name} = this.state;
+    const {name, username} = this.state;
     return (
       <Fragment>
-        <input type="text" name="" value={name} onChange={(e) => this.handleChange(e.target.value)} />
-        <button type="submit" value="Submit" onClick={this.handleSubmit}>Submit</button>
+        <div id="username">{username}</div>
+        <input id="username-input" type="text" name="" value={name} onChange={(e) => this.handleChange(e.target.value)} />
+        <button id="signupform-submit" type="submit" value="Submit" onClick={this.handleSubmit}>Submit</button>
       </Fragment>
     );
   }

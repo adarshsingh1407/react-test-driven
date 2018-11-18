@@ -2,13 +2,18 @@
 
 exports[`SignupForm should render correctly in debug mode 1`] = `
 <Fragment>
+  <div
+    id="username"
+  />
   <input
+    id="username-input"
     name=""
     onChange={[Function]}
     type="text"
-    value=""
+    value="Adarsh"
   />
   <button
+    id="signupform-submit"
     onClick={[Function]}
     type="submit"
     value="Submit"
