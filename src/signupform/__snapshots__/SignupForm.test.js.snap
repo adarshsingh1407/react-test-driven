@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupForm should render correctly in debug mode 1`] = `
+<Fragment>
+  <input
+    name=""
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+    type="submit"
+    value="Submit"
+  >
+    Submit
+  </button>
+</Fragment>
+`;
