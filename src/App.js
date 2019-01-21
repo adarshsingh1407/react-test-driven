@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SignupForm from './signupform/SignupForm';
+// import SignupForm from './signupform/SignupForm';
+// import LifecycleParent from './lifecycles/LifecycleParent';
+// import CBRE from './cbretest/CBRE';
+import Github from './github/Github';
+
+// const ids = [1, 2, 3];
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
@@ -16,8 +21,8 @@ class App extends Component {
             rel="noopener noreferrer"
           >
           </a>
-          <SignupForm />
-        </header>
+        </header> */}
+        <Github />
       </div>
     );
   }
